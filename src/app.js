@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
+import {Provider} from 'react-redux';
 import AppRouter from './routers/AppRouter';
 import configureStore from './store/configureStore';
 import {addExpense, editExpense, removeExpense } from './actions/expenses';
@@ -20,7 +21,14 @@ store.subscribe(() => {
 
 store.dispatch(addExpense({ description: "Electricity Bill", amount: 6000, createdAt: 21000 }));
 store.dispatch(addExpense({ description: "Gas Bill", amount: 1000, createdAt: 12000 }));
+store.dispatch(addExpense({ description: "Food Bill", amount: 6000, createdAt: 17000 }));
 
 store.dispatch(setTextFilter({ text: "ga"}));
 
-ReactDOM.render(<AppRouter />, document.getElementById('app'));
+const jsx = (
+    <Provider store = { store }>
+        <AppRouter />
+    </Provider>
+);
+
+ReactDOM.render(jsx, document.getElementById('app'));
