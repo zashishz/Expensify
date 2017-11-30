@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import validateExpenses from '../selectors/expenses';
 import ExpenseListItem from './ExpenseListItem';
 
 const ExpenseList = (props) => (
@@ -7,7 +8,6 @@ const ExpenseList = (props) => (
         <h2>Expense List</h2>
         { 
             props.expenses.map((expense) => {
-                console.log(expense.id);
                 return <ExpenseListItem key={expense.id} {...expense} />
             })
         }
@@ -16,6 +16,6 @@ const ExpenseList = (props) => (
 
 export default connect((state) => {
     return {
-        expenses: state.expenses
+        expenses: validateExpenses(state.expenses, state.filters)
     }
 })(ExpenseList);
