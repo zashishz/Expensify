@@ -16,14 +16,14 @@ const store = configureStore();
 store.subscribe(() => {
     const state = store.getState();
     const visibleExpenses =  selectExpenses(state.expenses, state.filters);
-    console.log(visibleExpenses);
+    // console.log(visibleExpenses);
 });
 
 store.dispatch(addExpense({ description: "Electricity Bill", amount: 6000, createdAt: 21000 }));
 store.dispatch(addExpense({ description: "Gas Bill", amount: 1000, createdAt: 12000 }));
 store.dispatch(addExpense({ description: "Food Bill", amount: 8000, createdAt: 17000 }));
 
-store.dispatch(setTextFilter("oo"));
+// store.dispatch(setTextFilter("oo"));
 
 const jsx = (
     <Provider store = { store }>
