@@ -22,6 +22,7 @@ store.subscribe(() => {
 store.dispatch(addExpense({ description: "Electricity Bill", amount: 6000, createdAt: 21000 }));
 store.dispatch(addExpense({ description: "Gas Bill", amount: 1000, createdAt: 12000 }));
 store.dispatch(addExpense({ description: "Food Bill", amount: 8000, createdAt: 17000 }));
+store.dispatch(editExpense('44b52b7d-d2e5-4b75-ab73-6173ee8ad394',{ description: "Fuud Bill" }));
 
 // store.dispatch(setTextFilter("oo"));
 
@@ -32,10 +33,3 @@ const jsx = (
 );
 
 ReactDOM.render(jsx, document.getElementById('app'));
-
-
-const a = {
-    name: "Ashish",
-    location: "Chnena",
-    color: "red"
-}
