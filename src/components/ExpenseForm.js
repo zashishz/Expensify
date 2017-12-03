@@ -3,10 +3,7 @@ import moment, { calendarFormat } from 'moment';
 import 'react-dates/initialize';
 import { SingleDatePicker } from 'react-dates';
 import 'react-dates/lib/css/_datepicker.css';
-import Error from './Error'
-
-const now = moment();
-console.log(now.format('MMM Do, YYYY'));
+import Error from './Error';
 
 export default class ExpenseForm extends React.Component {
 

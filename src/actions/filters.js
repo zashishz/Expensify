@@ -1,6 +1,6 @@
 // Filters Actions
 
-export const setTextFilter = (text) => ({
+export const setTextFilter = (text = '') => ({
     type: 'TEXT_FILTER',
     text
 })
