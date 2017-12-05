@@ -31,3 +31,14 @@ exports[`should render Expense list with Expenses 1`] = `
   />
 </div>
 `;
+
+exports[`should render empty list with empty message 1`] = `
+<div>
+  <h2>
+    Expense List
+  </h2>
+  <p>
+     No Expenses 
+  </p>
+</div>
+`;

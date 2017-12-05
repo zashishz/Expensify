@@ -7,6 +7,7 @@ import {addExpense, editExpense, removeExpense } from './actions/expenses';
 import { setEndDate, setStartDate, setTextFilter, sortByAmount, sortByDate } from './actions/filters';
 import selectExpenses from './selectors/expenses'
 import 'normalize.css/normalize.css';
+import 'react-dates/lib/css/_datepicker.css';
 import './styles/styles.scss';
 
 
