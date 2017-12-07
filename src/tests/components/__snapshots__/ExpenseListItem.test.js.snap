@@ -8,8 +8,10 @@ exports[`should generate Expense list 1`] = `
   >
     Gum
   </Link>
-  2000
-  , 
-  0
+  <p>
+    20.00 Rs
+    , 
+    January 1st, 1970
+  </p>
 </div>
 `;
