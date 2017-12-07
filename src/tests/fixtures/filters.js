@@ -1,17 +1,17 @@
 import moment from 'moment';
 
-const filter = {
+const filters = {
     text: '',
     sortBy: 'date',
     startDate: undefined,
     endDate: undefined
 };
 
-const altFilter = {
+const altFilters = {
     text: 'bill',
     sortBy: 'amount',
     startDate: moment(0),
     endDate: moment(0).add(4, 'days')
 };
 
-export { filter, altFilter };
+export { filters, altFilters };
