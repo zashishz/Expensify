@@ -8,6 +8,7 @@ const config = {
     storageBucket: "expensify-3e039.appspot.com",
     messagingSenderId: "272164191579"
 };
+
 firebase.initializeApp(config);
 
 const database = firebase.database();
