@@ -8,7 +8,7 @@ exports[`should render snapshot 1`] = `
         "amount": 2200,
         "createdAt": -345600000,
         "description": "Rent",
-        "id": 2,
+        "id": "2",
         "note": "",
       }
     }
