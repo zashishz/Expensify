@@ -2,7 +2,6 @@
 
 exports[`should render expensify dashboard 1`] = `
 <div>
-  This is Expesify Dashboard!
   <Connect(ExpensesSummary) />
   <Connect(ExpenseListFilters) />
   <Connect(ExpenseList) />

@@ -6,7 +6,6 @@ import ExpensesSummary from './ExpensesSummary';
 
 const Dashboard = () => (
     <div>
-        This is Expesify Dashboard!
         <ExpensesSummary />
         <ExpenseListFilters />
         <ExpenseList />
